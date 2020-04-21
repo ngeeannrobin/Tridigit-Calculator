@@ -2,9 +2,17 @@ import json
 import sys
 
 with open("ComplexAlgorithm.json") as file:
-    data = json.load(file)
+    files = json.load(file)
 
 def Calculate(eqn):
+    operator = "".join([i for i in eqn if not i.isdigit()])
+    filename = files.get(operator,None)
+    if filename:
+        with open(filename) as file:
+            data = json.load(file)
+    else:
+        print("Invalid equation.")
+        return
     ans = data.get(eqn,"Invalid equation.")
     print(ans)
 
