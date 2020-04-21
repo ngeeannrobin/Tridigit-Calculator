@@ -10,3 +10,11 @@ As the name implies, Tridigit Calculator is a three digit calculator. It takes a
 # Usage
 
 In the command prompt, run **python *path/to/file/TridigitCalculator.py* "aaaxbbb"**, where aaa and bbb are the 2 three digit numbers and x is the operator.
+
+Supported operators:
+- Addition (+)
+- Subtraction (-)
+- Multiplication (*)
+- Division (/)
+- Modulus (%)
+- Floor Division (//)
