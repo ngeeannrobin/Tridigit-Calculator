@@ -18,3 +18,6 @@ Supported operators:
 - Division (/)
 - Modulus (%)
 - Floor Division (//)
+
+# Additional Notes
+This project was created as a joke due to my boredom during the Coronavirus quarantine period.
