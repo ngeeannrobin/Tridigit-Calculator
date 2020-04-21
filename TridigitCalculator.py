@@ -5,6 +5,7 @@ with open("ComplexAlgorithm.json") as file:
     files = json.load(file)
 
 def Calculate(eqn):
+    eqn = eqn.replace(" ","")
     operator = "".join([i for i in eqn if not i.isdigit()])
     filename = files.get(operator,None)
     if filename:
